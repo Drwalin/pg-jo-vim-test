@@ -173,6 +173,27 @@
 
 ## 8. Napisanie skryptu (inoremap <C-x>D Wprowadzony text ze skrótu.) ze skrótem i wykonanie :source i sprawdzenie czy działa.
 
+1. Otworzyć wiersz poleceń z powłoką np. bash i zainstalowanym vimem.
+2. Otworzyć istniejący plik wpisując w wiersz poleceń: `vim plik8.txt` i akceptując enterem.
+3. Przejście do trybu INSERT klikając: `i`.
+4. Wpisanie skryptu ze skrótem klawiszowym klikając: `inoremap <C-x>D Tekst wypisany ze skrótu.`.
+5. Wyjście z trybu INSERT do trybu NORMAL klikając escape.
+6. Zapisanie pliku wpisując: `:w` i potwierdzając enterem.
+7. Załadowanie wcześniej zapisanego pliku jako skryptu wpisując: `source plik8.txt`.
+8. Otworzenie nowego pustego pliku wpisując: `:e new` i akceptując enterem.
+9. Przejście do trybu INSERT klikając: `i`.
+10. Użycie wcześniej przygotowanego skrótu klikając: ctrl + x i shift + d.
+
+1. Otwarty wiersz poleceń.
+2. Otworzy się edytor z zawartością pliku `plik8.txt`.
+3. W lewym dolnym rogu wiersza poleceń pojawi się napis `-- INSERT --`.
+4. Pojawienie się w lewym górnym rogu `inoremap <C-x>D Tekst wypisany ze skrótu.`.
+5. Nic widocznego się nie zmieni, jednak tryb zostatnie zmieniony na NORMAL.
+6. Nowa zawartośc pliku została zapisana do pliku `plik8.txt`.
+7. Nic widocznego się nie zmieni, jednak plik zostanie załadowany jako skrypt.
+8. Nowy pusty plik o nazwie `new` zostaje otwarty.
+9. W lewym dolnym rogu wiersza poleceń pojawi się napis `-- INSERT --`.
+10. W lewym górnym rogu wiersza poleceń pojawi się napis `Tekst wypisany ze skrótu.`.
 
 
 ## 9. Użycie wbudowanego menu pomocy do wyjścia z edytora.
