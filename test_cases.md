@@ -29,7 +29,6 @@
 8. Otworzyć ponownie plik i sprawdzić jego zawartość wpisując w wiersz poleceń: `vim plik1.txt` i akceptując enterem.
 ```
 
-
 ```
 1. Otwarty wiersz poleceń.
 2. Otworzy się aplikacja pokauzując wersję edytora na środku wiersza poleceń.
@@ -51,7 +50,6 @@
 4. Wyjście z edytora wpisując: `:q` i akceptując enterem.
 ```
 
-
 ```
 1. Otwarty wiersz poleceń.
 2. Otworzy się edytor z zawartością pliku `plik1.txt`.
@@ -67,7 +65,6 @@
 2. Otworzyć istniejący plik wpisując w wiersz poleceń: `vim plik3.txt` i akceptując enterem.
 3. Zamienić `text` na `nowy` wpisując: `:%s/text/nowy/g` i akceptując enterem.
 ```
-
 
 ```
 1. Otwarty wiersz poleceń.
@@ -94,7 +91,6 @@
 13. Zapisać plik wpisując: `:w` i akceptując enterem.
 14. Zamknięcie wszystkich okien i wyjście z aplikacji wpisując: `:qa` i akceptując enterem.
 ```
-
 
 ```
 1. Otwarty wiersz poleceń z powłoką bash.
@@ -133,7 +129,6 @@
 14. Zamknięcie wszystkich zakładek i wyjście z aplikacji wpisując: `:qa` i akceptując enterem.
 ```
 
-
 ```
 1. Otwarty wiersz poleceń z powłoką bash.
 2. Otworzy się aplikacja pokauzując wersję edytora na środku wiersza poleceń.
@@ -162,7 +157,6 @@
 5. Uruchomić makro klikając: `@c`.
 ```
 
-
 ```
 1. Otwarty wiersz poleceń.
 2. Otworzy się aplikacja pokauzując wersję edytora na środku wiersza poleceń.
@@ -188,7 +182,6 @@
 11. Poszerzenie zaznaczenia o kilka znaków w prawo klikając 5 razy: `l`.
 12. Usunięcie zaznaczonego tekstu klikając: `x`.
 ```
-
 
 ```
 1. Otwarty wiersz poleceń.
@@ -220,7 +213,6 @@
 9. Przejście do trybu INSERT klikając: `i`.
 10. Użycie wcześniej przygotowanego skrótu klikając: ctrl + x i shift + d.
 ```
-
 
 ```
 1. Otwarty wiersz poleceń.
