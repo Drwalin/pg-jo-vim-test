@@ -117,8 +117,8 @@
 5. Pokaże się `Test text 1.` w lewym górnym rogu wiersza poleceń.
 6. Nic widocznego się nie zmieni, jednak tryb zostatnie zmieniony na NORMAL.
 7. Zostatnie utworzony nowy plik na dysku o nazwie `plik5-1.txt`, oraz pokaże się w lewym dolnym rogu nazwa pliku, oraz że został poprawnie zapisany.
-8. Wiersz poleceń zostatnie podzielony na 2 równe pionowe części (2 okna) z otwartym plikiem `plik5-1.txt`.
-9. Zostatnie otwarty nowy pusty plik o nazwie `plik5-2.txt` (ponieważ nie istnieje, zostanie otwarty pusty plik).
+8. W lewym górnym rogu pokażą się dwie zakładki, pierwsza z napisem `plik5-1.txt`, oraz druga `[No Name]`, która jest aktywna, oraz z brakiem zawartości.
+9. Zostatnie otwarty nowy pusty plik o nazwie `plik5-2.txt` (ponieważ nie istnieje, zostanie otwarty pusty plik). Zmieni się nazwa drugiej zakładki na `plik5-2.txt`.
 10. W lewym dolnym rogu ekranu pojawi się napis `-- INSERT --`
 11. Pokaże się `Test text 2.` w lewym górnym rogu wiersza poleceń, czyli w lewym oknie.
 12. Nic widocznego się nie zmieni, jednak tryb zostatnie zmieniony na NORMAL.
