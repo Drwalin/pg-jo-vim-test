@@ -29,7 +29,7 @@
 
 1. Otwarty wiersz poleceń.
 2. Otworzy się aplikacja pokauzując wersję edytora na środku wiersza poleceń.
-3. W lewym dolnym rogu ekranu pojawi się napis `-- INSERT --`
+3. W lewym dolnym rogu wiersza poleceń pojawi się napis `-- INSERT --`.
 4. Pokaże się `Test text.` w lewym górnym rogu wiersza poleceń.
 5. Nic widocznego się nie zmieni, jednak tryb zostatnie zmieniony na NORMAL.
 6. Zostatnie utworzony nowy plik o nazwie `plik1.txt`, oraz pokaże się w lewym dolnym rogu nazwa pliku, oraz że został poprawnie zapisany.
@@ -81,13 +81,13 @@
 1. Otwarty wiersz poleceń z powłoką bash.
 2. Otworzy się aplikacja pokauzując wersję edytora na środku wiersza poleceń.
 3. Zostatnie otwarty nowy pusty plik o nazwie `plik4-1.txt` (ponieważ nie istnieje, zostanie otwarty pusty plik).
-4. W lewym dolnym rogu ekranu pojawi się napis `-- INSERT --`
+4. W lewym dolnym rogu wiersza poleceń pojawi się napis `-- INSERT --`.
 5. Pokaże się `Test text 1.` w lewym górnym rogu wiersza poleceń.
 6. Nic widocznego się nie zmieni, jednak tryb zostatnie zmieniony na NORMAL.
 7. Zostatnie utworzony nowy plik na dysku o nazwie `plik4-1.txt`, oraz pokaże się w lewym dolnym rogu nazwa pliku, oraz że został poprawnie zapisany.
 8. Wiersz poleceń zostatnie podzielony na 2 równe pionowe części (2 okna) z otwartym plikiem `plik4-1.txt`.
 9. Zostatnie otwarty nowy pusty plik o nazwie `plik4-2.txt` (ponieważ nie istnieje, zostanie otwarty pusty plik).
-10. W lewym dolnym rogu ekranu pojawi się napis `-- INSERT --`
+10. W lewym dolnym rogu wiersza poleceń pojawi się napis `-- INSERT --`.
 11. Pokaże się `Test text 2.` w lewym górnym rogu wiersza poleceń, czyli w lewym oknie.
 12. Nic widocznego się nie zmieni, jednak tryb zostatnie zmieniony na NORMAL.
 13. Zostatnie utworzony nowy plik na dysku o nazwie `plik4-1.txt`, oraz pokaże się w lewym dolnym rogu nazwa pliku, oraz że został poprawnie zapisany.
@@ -114,13 +114,13 @@
 1. Otwarty wiersz poleceń z powłoką bash.
 2. Otworzy się aplikacja pokauzując wersję edytora na środku wiersza poleceń.
 3. Zostatnie otwarty nowy pusty plik o nazwie `plik5-1.txt` (ponieważ nie istnieje, zostanie otwarty pusty plik).
-4. W lewym dolnym rogu ekranu pojawi się napis `-- INSERT --`
+4. W lewym dolnym rogu wiersza poleceń pojawi się napis `-- INSERT --`.
 5. Pokaże się `Test text 1.` w lewym górnym rogu wiersza poleceń.
 6. Nic widocznego się nie zmieni, jednak tryb zostatnie zmieniony na NORMAL.
 7. Zostatnie utworzony nowy plik na dysku o nazwie `plik5-1.txt`, oraz pokaże się w lewym dolnym rogu nazwa pliku, oraz że został poprawnie zapisany.
 8. W lewym górnym rogu pokażą się dwie zakładki, pierwsza z napisem `plik5-1.txt`, oraz druga `[No Name]`, która jest aktywna, oraz z brakiem zawartości.
 9. Zostatnie otwarty nowy pusty plik o nazwie `plik5-2.txt` (ponieważ nie istnieje, zostanie otwarty pusty plik). Zmieni się nazwa drugiej zakładki na `plik5-2.txt`.
-10. W lewym dolnym rogu ekranu pojawi się napis `-- INSERT --`
+10. W lewym dolnym rogu wiersza poleceń pojawi się napis `-- INSERT --`.
 11. Pokaże się `Test text 2.` w lewym górnym rogu wiersza poleceń, czyli w lewym oknie.
 12. Nic widocznego się nie zmieni, jednak tryb zostatnie zmieniony na NORMAL.
 13. Zostatnie utworzony nowy plik na dysku o nazwie `plik5-1.txt`, oraz pokaże się w lewym dolnym rogu nazwa pliku, oraz że został poprawnie zapisany.
@@ -137,13 +137,38 @@
 
 1. Otwarty wiersz poleceń.
 2. Otworzy się aplikacja pokauzując wersję edytora na środku wiersza poleceń.
-3. W lewym górnym rogu ekranu pojawi się napis `// Copyright (C) 2022 Name`.
+3. W lewym górnym rogu wiersza poleceń pojawi się napis `// Copyright (C) 2022 Name`.
 4. Kursor przeszedł na linię niżej i włączył się tryb INSERT, po czym przeszło do trybu NORMAL.
 5. Pojawienie się drugiego takiego samego napisu `// Copyright (C) 2022 Name`.
 
 
 ## 7. Usunięcie kilku znaków przy pomocy trybu VISUAL BLOCK.
 
+1. Otworzyć wiersz poleceń z powłoką np. bash i zainstalowanym vimem.
+2. Otworzyć edytor VIM poleceniem: `vim` i akceptując enterem.
+3. Przejście do trybu INSERT klikając: `i`.
+4. Wpisanie dłuższej linijki, np: `Przykładowa dłuższa linijka do kilkukrotnego skopiowania.`.
+5. Przejście do trybu NORMAL klikając escape.
+6. Skopiowanie całej linijki kilkając: `yy`.
+7. Dziesięciokrotne wklejenie skopiowanej linijki: `10p`.
+8. Przejście na początek pliku klikając: `gg`.
+9. Przejście w tryb VISUAL BLOCK klikając ctrl + v.
+10. Poszerzenie zaznaczenia o kilka linijek w dół klikając 5 razy: `j`.
+11. Poszerzenie zaznaczenia o kilka znaków w prawo klikając 5 razy: `l`.
+12. Usunięcie zaznaczonego tekstu klikając: `x`.
+
+1. Otwarty wiersz poleceń.
+2. Otworzy się aplikacja pokauzując wersję edytora na środku wiersza poleceń.
+3. W lewym dolnym rogu wiersza poleceń pojawi się napis `-- INSERT --`.
+4. Pojawienie się dłuższej linijki w lewym górnym rogu wiersza poleceń.
+5. Nic widocznego się nie zmieni, jednak tryb zostatnie zmieniony na NORMAL.
+6. Linijka została skopiowana do rejestru.
+7. Pojawienie się dziesięciu kolejnych kopii wcześniej stworzonej linijki.
+8. Kursor przeniesiony do lewego górnego rogu wiersza poleceń.
+9. W lewym dolnym rogu wiersza poleceń pojawia się napis `-- VISUAL BLOCK --`.
+10. Zaznaczenie powiększa się o 5 kolejnych wierszy.
+11. Zaznaczenie poszerza się o 5 kolejnych kolumn.
+12. Zaznaczony tekst zostaje usunięty.
 
 
 ## 8. Napisanie skryptu (inoremap <C-x>D Wprowadzony text ze skrótu.) ze skrótem i wykonanie :source i sprawdzenie czy działa.
