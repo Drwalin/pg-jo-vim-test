@@ -4,7 +4,7 @@
 
 1. Utworzenie nowego pliku z tekstem i ponowne uruchomienie aplikacji i sprawdzenie czy plik ma poprawną zawartość.
 2. Otworzenie istniejącego pliku i zapisanie pod inną nazwą.
-3. Zamiana każdego wystąpienia "text" na "nowy" w pliku i zapisanie.
+3. Zamiana każdego wystąpienia "text" na "nowy" w pliku.
 4. Edycja wielu plików w różnych oknach przy podziale wertyklanym.
 5. Edycja wielu plików w różnych zakładkach.
 6. Nagranie i użycie prostego makra.
@@ -42,25 +42,88 @@
 2. Otworzyć istniejący plik wpisując w wiersz poleceń: `vim plik1.txt` i akceptując enterem.
 3. Zapisanie pliku pod nową nazwą wpisując: `:w plik2.txt` i akceptując enterem.
 4. Wyjście z edytora wpisując: `:q` i akceptując enterem.
-5. Sprawdzenie czy istnieje plik z `plik2.txt` z zawartością pliku `plik1.txt`.
 
 1. Otwarty wiersz poleceń.
 2. Otworzy się edytor z zawartością pliku `plik1.txt`.
-3. Utworzony nowy plik o nazwie `plik2.txt` z tą samą zawartością co plik `plik1.txt`.
-4. Edytor się wyłączy, oraz będzie dostępny ponownie wiersz poleceń.
-5. 
+3. Zostatnie utworzony nowy plik o nazwie `plik2.txt` z tą samą zawartością co plik `plik1.txt`.
+4. Edytor się wyłączy, oraz będzie dostępny ponownie wiersz poleceń (np. bash).
 
 
-## 3. Zamiana każdego wystąpienia "text" na "nowy" w pliku i zapisanie.
+## 3. Zamiana każdego wystąpienia "text" na "nowy" w pliku.
 
+1. Otworzyć wiersz poleceń z powłoką np. bash i zainstalowanym vimem.
+2. Otworzyć istniejący plik wpisując w wiersz poleceń: `vim plik3.txt` i akceptując enterem.
+3. Zamienić `text` na `nowy` wpisując: `:%s/text/nowy/g` i akceptując enterem.
+
+1. Otwarty wiersz poleceń.
+2. Otworzy się edytor z zawartością pliku `plik3.txt` z licznym wystąpieniem `text`.
+3. Każde wystąpienie słowa `text` zostało zamienione na `nowy`.
 
 
 ## 4. Edycja wielu plików w różnych oknach przy podziale wertyklanym.
 
+1. Otworzyć wiersz poleceń z powłoką np. bash i zainstalowanym vimem.
+2. Otworzyć edytor VIM poleceniem: `vim` i akceptując enterem.
+3. Otworzyć plik o nazwie `plik4-1.txt` wpisując: `:e plik4-1.txt` i akceptując enterem.
+4. Włączyć tryb INSERT klikając: `i`.
+5. Wpisać: `Test text 1.`.
+6. Wyjść z trybu INSERT do trybu NORMAL klikając ESC.
+7. Zapisać plik wpisując: `:w` i akceptując enterem.
+8. Otworzyć drugie okno z podziałem wertykalnym poleceniem: `:vs` i akceptując enterem.
+9. Otworzyć w nim kolejny plik o nazwie `plik4-2.txt` poleceniem: `:e plik4-2.txt` i akceptując enterem.
+10. Włączyć tryb INSERT klikając: `i`.
+11. Wpisać: `Test text 2.`.
+12. Wyjść z trybu INSERT do trybu NORMAL klikając ESC.
+13. Zapisać plik wpisując: `:w` i akceptując enterem.
+14. Zamknięcie wszystkich okien i wyjście z aplikacji wpisując: `:qa` i akceptując enterem.
+
+1. Otwarty wiersz poleceń z powłoką bash.
+2. Otworzy się aplikacja pokauzując wersję edytora na środku wiersza poleceń.
+3. Zostatnie otwarty nowy pusty plik o nazwie `plik4-1.txt` (ponieważ nie istnieje, zostanie otwarty pusty plik).
+4. W lewym dolnym rogu ekranu pojawi się napis `-- INSERT --`
+5. Pokaże się `Test text 1.` w lewym górnym rogu wiersza poleceń.
+6. Nic widocznego się nie zmieni, jednak tryb zostatnie zmieniony na NORMAL.
+7. Zostatnie utworzony nowy plik na dysku o nazwie `plik4-1.txt`, oraz pokaże się w lewym dolnym rogu nazwa pliku, oraz że został poprawnie zapisany.
+8. Wiersz poleceń zostatnie podzielony na 2 równe pionowe części (2 okna) z otwartym plikiem `plik4-1.txt`.
+9. Zostatnie otwarty nowy pusty plik o nazwie `plik4-2.txt` (ponieważ nie istnieje, zostanie otwarty pusty plik).
+10. W lewym dolnym rogu ekranu pojawi się napis `-- INSERT --`
+11. Pokaże się `Test text 2.` w lewym górnym rogu wiersza poleceń, czyli w lewym oknie.
+12. Nic widocznego się nie zmieni, jednak tryb zostatnie zmieniony na NORMAL.
+13. Zostatnie utworzony nowy plik na dysku o nazwie `plik4-1.txt`, oraz pokaże się w lewym dolnym rogu nazwa pliku, oraz że został poprawnie zapisany.
+14. Oba okna edytora się zamknął, or edytor się wyłączy, oraz będzie dostępny ponownie wiersz poleceń (np. bash).
 
 
 ## 5. Edycja wielu plików w różnych zakładkach.
 
+1. Otworzyć wiersz poleceń z powłoką np. bash i zainstalowanym vimem.
+2. Otworzyć edytor VIM poleceniem: `vim` i akceptując enterem.
+3. Otworzyć plik o nazwie `plik5-1.txt` wpisując: `:e plik5-1.txt` i akceptując enterem.
+4. Włączyć tryb INSERT klikając: `i`.
+5. Wpisać: `Test text 1.`.
+6. Wyjść z trybu INSERT do trybu NORMAL klikając ESC.
+7. Zapisać plik wpisując: `:w` i akceptując enterem.
+8. Otworzyć nową zakładkę poleceniem: `:newtab` i akceptując enterem.
+9. Otworzyć w niej kolejny plik o nazwie `plik5-2.txt` poleceniem: `:e plik5-2.txt` i akceptując enterem.
+10. Włączyć tryb INSERT klikając: `i`.
+11. Wpisać: `Test text 2.`.
+12. Wyjść z trybu INSERT do trybu NORMAL klikając ESC.
+13. Zapisać plik wpisując: `:w` i akceptując enterem.
+14. Zamknięcie wszystkich zakładek i wyjście z aplikacji wpisując: `:qa` i akceptując enterem.
+
+1. Otwarty wiersz poleceń z powłoką bash.
+2. Otworzy się aplikacja pokauzując wersję edytora na środku wiersza poleceń.
+3. Zostatnie otwarty nowy pusty plik o nazwie `plik5-1.txt` (ponieważ nie istnieje, zostanie otwarty pusty plik).
+4. W lewym dolnym rogu ekranu pojawi się napis `-- INSERT --`
+5. Pokaże się `Test text 1.` w lewym górnym rogu wiersza poleceń.
+6. Nic widocznego się nie zmieni, jednak tryb zostatnie zmieniony na NORMAL.
+7. Zostatnie utworzony nowy plik na dysku o nazwie `plik5-1.txt`, oraz pokaże się w lewym dolnym rogu nazwa pliku, oraz że został poprawnie zapisany.
+8. Wiersz poleceń zostatnie podzielony na 2 równe pionowe części (2 okna) z otwartym plikiem `plik5-1.txt`.
+9. Zostatnie otwarty nowy pusty plik o nazwie `plik5-2.txt` (ponieważ nie istnieje, zostanie otwarty pusty plik).
+10. W lewym dolnym rogu ekranu pojawi się napis `-- INSERT --`
+11. Pokaże się `Test text 2.` w lewym górnym rogu wiersza poleceń, czyli w lewym oknie.
+12. Nic widocznego się nie zmieni, jednak tryb zostatnie zmieniony na NORMAL.
+13. Zostatnie utworzony nowy plik na dysku o nazwie `plik5-1.txt`, oraz pokaże się w lewym dolnym rogu nazwa pliku, oraz że został poprawnie zapisany.
+14. Oba okna edytora się zamknął, or edytor się wyłączy, oraz będzie dostępny ponownie wiersz poleceń (np. bash).
 
 
 ## 6. Nagranie i użycie prostego makra.
