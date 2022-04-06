@@ -10,7 +10,8 @@
 6. Nagranie i użycie prostego makra.
 7. Usunięcie kilku znaków przy pomocy trybu VISUAL BLOCK.
 8. Napisanie skryptu (inoremap <C-x>D Wprowadzony text ze skrótu.) ze skrótem i wykonanie :source i sprawdzenie czy działa.
-
+9. Użycie wbudowanego menu pomocy do wyjścia z edytora.
+10. Uproszczona nawigacja przy pomocy powtarzania komend.
 
 
 
@@ -126,8 +127,19 @@
 14. Oba okna edytora się zamknął, or edytor się wyłączy, oraz będzie dostępny ponownie wiersz poleceń (np. bash).
 
 
-## 6. Nagranie i użycie prostego makra.
+## 6. Nagranie i użycie prostego makra do wypisywania copyright.
 
+1. Otworzyć wiersz poleceń z powłoką np. bash i zainstalowanym vimem.
+2. Otworzyć edytor VIM poleceniem: `vim` i akceptując enterem.
+3. Nagrać makro wpisując: `qci// Copyright (C) 2022 Name<ESCAPE>q`, gdzie <ESCAPE> to klawisz escape.
+4. Przejście do kolejnej linii klikając `o` i escape.
+5. Uruchomić makro klikając: `@c`.
+
+1. Otwarty wiersz poleceń.
+2. Otworzy się aplikacja pokauzując wersję edytora na środku wiersza poleceń.
+3. W lewym górnym rogu ekranu pojawi się napis `// Copyright (C) 2022 Name`.
+4. Kursor przeszedł na linię niżej i włączył się tryb INSERT, po czym przeszło do trybu NORMAL.
+5. Pojawienie się drugiego takiego samego napisu `// Copyright (C) 2022 Name`.
 
 
 ## 7. Usunięcie kilku znaków przy pomocy trybu VISUAL BLOCK.
@@ -136,6 +148,13 @@
 
 ## 8. Napisanie skryptu (inoremap <C-x>D Wprowadzony text ze skrótu.) ze skrótem i wykonanie :source i sprawdzenie czy działa.
 
+
+
+## 9. Użycie wbudowanego menu pomocy do wyjścia z edytora.
+
+
+
+## 10. Uproszczona nawigacja przy pomocy powtarzania komend.
 
 
 
