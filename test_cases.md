@@ -10,8 +10,8 @@
 6. Nagranie i użycie prostego makra.
 7. Usunięcie kilku znaków przy pomocy trybu VISUAL BLOCK.
 8. Napisanie skryptu (inoremap <C-x>D Wprowadzony text ze skrótu.) ze skrótem i wykonanie :source i sprawdzenie czy działa.
-9. Użycie wbudowanego menu pomocy do wyjścia z edytora.
-10. Uproszczona nawigacja przy pomocy powtarzania komend.
+9. Użycie wbudowanego menu pomocy do znalezienia sposobu wyjścia z edytora.
+10. Uproszczona nawigacja przy pomocy automatycznego powtarzania komend.
 
 
 
@@ -61,15 +61,17 @@
 ## 3. Zamiana każdego wystąpienia "text" na "nowy" w pliku.
 
 ```
-1. Otworzyć wiersz poleceń z powłoką np. bash i zainstalowanym vimem.
-2. Otworzyć istniejący plik wpisując w wiersz poleceń: `vim plik3.txt` i akceptując enterem.
-3. Zamienić `text` na `nowy` wpisując: `:%s/text/nowy/g` i akceptując enterem.
+1. Utworzyć plik z wielokrotnym wystąpieniem słowa `text` w dowolnym edytorze tekstowym (np. nano lub notepad++) i zapisać go w pliku `plik3.txt`.
+2. Otworzyć wiersz poleceń z powłoką np. bash i zainstalowanym vimem.
+3. Otworzyć istniejący plik wpisując w wiersz poleceń: `vim plik3.txt` i akceptując enterem.
+4. Zamienić `text` na `nowy` wpisując: `:%s/text/nowy/g` i akceptując enterem.
 ```
 
 ```
-1. Otwarty wiersz poleceń.
-2. Otworzy się edytor z zawartością pliku `plik3.txt` z licznym wystąpieniem `text`.
-3. Każde wystąpienie słowa `text` zostało zamienione na `nowy`.
+1. Powstanie plik z licznym wystąpieniem słowa `text`.
+2. Otwarty wiersz poleceń.
+3. Otworzy się edytor z zawartością pliku `plik3.txt` z licznym wystąpieniem `text`.
+4. Każde wystąpienie słowa `text` zostało zamienione na `nowy`.
 ```
 
 
@@ -228,11 +230,11 @@
 ```
 
 
-## 9. Użycie wbudowanego menu pomocy do wyjścia z edytora.
+## 9. Użycie wbudowanego menu pomocy do znalezienia sposobu wyjścia z edytora.
 
 
 
-## 10. Uproszczona nawigacja przy pomocy powtarzania komend.
+## 10. Uproszczona nawigacja przy pomocy automatycznego powtarzania komend.
 
 
 
