@@ -205,7 +205,7 @@
 
 ```
 1. Otworzyć wiersz poleceń z powłoką np. bash i zainstalowanym vimem.
-2. Otworzyć istniejący plik wpisując w wiersz poleceń: `vim plik8.txt` i akceptując enterem.
+2. Otworzyć plik wpisując w wiersz poleceń: `vim plik8.txt` i akceptując enterem.
 3. Przejście do trybu INSERT klikając: `i`.
 4. Wpisanie skryptu ze skrótem klawiszowym klikając: `inoremap <C-x>D Tekst wypisany ze skrótu.`.
 5. Wyjście z trybu INSERT do trybu NORMAL klikając escape.
@@ -218,7 +218,7 @@
 
 ```
 1. Otwarty wiersz poleceń.
-2. Otworzy się edytor z zawartością pliku `plik8.txt`.
+2. Otworzy się edytor z pustym plikiem `plik8.txt`.
 3. W lewym dolnym rogu wiersza poleceń pojawi się napis `-- INSERT --`.
 4. Pojawienie się w lewym górnym rogu `inoremap <C-x>D Tekst wypisany ze skrótu.`.
 5. Nic widocznego się nie zmieni, jednak tryb zostatnie zmieniony na NORMAL.
@@ -232,10 +232,43 @@
 
 ## 9. Użycie wbudowanego menu pomocy do znalezienia sposobu wyjścia z edytora.
 
+```
+1. Otworzyć wiersz poleceń z powłoką np. bash i zainstalowanym vimem.
+2. Otworzyć edytor VIM poleceniem: `vim` i akceptując enterem.
+3. Otworzyć menu pomocy dla wyjścia wpisując: `:help quit` i akceptując enterem.
+4. Wyłączyć aktywne okno znalezionym poleceniem: `:quit` i akceptując enterem.
+5. Powtórzyć poprzedni krok.
+```
+
+```
+1. Otwarty wiersz poleceń.
+2. Otworzy się aplikacja pokauzując wersję edytora na środku wiersza poleceń.
+3. Okno aplikacji zostanie podzielone na pół i na jednek z połówek pokaże się menu pomocy z wypisanymi kilkoma poleceniami i ich opisami.
+4. Okno pomocy zostanie zamknięte.
+5. Aplikacja VIM zostaje zamknięta, oraz pokazują się spowrotem powłoka (np. bash).
+```
 
 
 ## 10. Uproszczona nawigacja przy pomocy automatycznego powtarzania komend.
 
+```
+1. Znaleźć dowolny plik tekstowy, mający conajmniej 10 linijek tekstu i nazwać go `plik10.txt`.
+2. Otworzyć wiersz poleceń z powłoką np. bash i zainstalowanym vimem w miejscu gdzie został zapisany plik `plik10.txt`.
+3. Otworzyć istniejący plik wpisując w wiersz poleceń: `vim plik10.txt` i akceptując enterem.
+4. Przejść do 9 linijki klikając: `9gg`.
+5. Przejść 16 znaków w prawo klikając: `16l`.
+6. Przejść 6 linijek do góry klikając: `6k`.
+7. Usunąć 5 znaków klikając: `5x`.
+```
 
+```
+1. Istnieje plik o nazwie `plik10.txt` tekstowy z zawartością conajmniej 10 linijek.
+2. Otwarty wiersz poleceń.
+3. Otworzy się edytor z zawartością pliku `plik10.txt`.
+4. Kursor przeniesię się na początek 9 linijki.
+5. Kursor przesunie się 16 znaków w prawo.
+6. Kursor przesunie się 6 linijek do góry.
+7. Zostanie usuniętych 5 kolejnych następujących po sobie znaków, zaczynając od znak na którym znajduje się kursor.
+```
 
 
